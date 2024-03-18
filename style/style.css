@@ -61,7 +61,7 @@ a {
 }
 
 .container {
-    min-height: 15rem;
+    /* min-height: 15rem; */
     max-width: 1200px;
     margin: 0 auto;
     background-color: rgb(85, 85, 85);
@@ -383,9 +383,27 @@ nav a {
 /*************************** START PANEL *************************/
 
 .start {
+    padding: 4rem 0;
     background-color: aquamarine;
     min-height: 15rem;
     width: 100%;
+}
+
+.start-container {
+    padding: 4rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(85, 85, 85);
+}
+
+.start .col-40 {
+    margin-top: 1rem;
+}
+
+.start a {
+    color: black;
+    background-color: rgb(170, 170, 170);
+    padding: .8rem 3rem;
 }
 
 /************* FOOTER STYLE ************/
