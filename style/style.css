@@ -67,6 +67,17 @@ a {
     margin-top: 3rem;
 }
 
+.margin-bot {
+    margin-bottom: 3rem;
+}
+
+.button {
+    background-color: rgb(0, 119, 255);
+    padding: 1em 1.5em;
+    color: white;
+    width: auto;
+}
+
 form {
     padding: 2rem 0;
     display: flex;
@@ -107,25 +118,20 @@ nav a {
 
 .nav-btn {
     height: 100%;
-    /* border: 1px solid black; */
     padding: 20px;
     display: block;
 }
 
 .nav-lgn {
-    /* border: 1px solid black; */
     padding: 5px 10px;
     margin-right: 5px;
 }
 
-.button {
-    background-color: rgb(0, 119, 255);
-    padding: 5px 10px;
-    color: white;
-    width: auto;
-}
-
 /************* MAIN STYLE ************/
+
+
+
+/*************************** INTRO PANEL *************************/
 .intro {
     background-color: aquamarine;
     min-height: 15rem;
@@ -162,13 +168,13 @@ nav a {
     position: absolute;
 }
 
+/*************************** PRICE PANEL *************************/
 .price {
     padding-top: 6rem;
 }
 
 .panel {
     border: 1px solid rgb(139, 139, 139);
-    /* min-height: 1000px; */
     width: 30%;
 }
 
@@ -199,11 +205,53 @@ nav a {
     padding-bottom: 2rem;
 }
 
+.summary i {
+    color: rgb(0, 110, 255);
+}
 
+.panel a {
+    text-align: center;
+}
 
+.free-trial {
+    display: flex;
+    flex-direction: column;
+}
 
+/*************************** CONTACT PANEL *************************/
 
+.panel-100-width {
+    border: 1px solid rgb(139, 139, 139);
+    width: 100%;
+}
 
+.team {
+    text-align: center;
+    border-bottom: 1px solid rgb(139, 139, 139);
+    padding: .7rem;
+}
+
+.col-70 {
+    padding: 2rem;
+    height: 15rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.col-30 {
+    width: 30%;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.col-70 p {
+    padding-top: 3rem;
+}
 
 
 
