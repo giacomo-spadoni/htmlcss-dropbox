@@ -9,8 +9,33 @@
     font-weight: 500;
 }
 
+h1 {
+    font-size: 70px;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
 .flex {
     display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
 }
 
 .space-between {
@@ -28,18 +53,30 @@ a {
 
 .container {
     min-height: 15rem;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     background-color: rgb(85, 85, 85);
 }
 
-h1 {
-    font-size: 70px;
-    font-weight: 800;
+.margin-top {
+    margin-top: 3rem;
 }
 
-.margin-top {
-    margin-top: 40px;
+form {
+    padding: 2rem 0;
+    display: flex;
+    gap: 20px;
+}
+
+.grey {
+    color: darkgrey;
+}
+
+#small {
+    margin-left: 1rem;
+    width: 25%;
+    border: none;
+    border-top: 1px solid rgb(139, 139, 139)
 }
 
 /************* HEADER STYLE ************/
@@ -103,7 +140,7 @@ nav a {
     flex-direction: column;
     align-items: baseline;
     gap: 20px;
-    margin-right: 20px;
+    margin-right: 1rem;
 }
 
 .text-box i {
@@ -119,6 +156,38 @@ nav a {
     display: block;
     position: absolute;
 }
+
+.price {
+    padding-top: 6rem;
+}
+
+.panel {
+    border: 1px solid rgb(139, 139, 139);
+    min-height: 1000px;
+    width: 30%;
+}
+
+.panel>* {
+    padding: 1rem;
+}
+
+.subscription {
+    border-bottom: 1px solid rgb(139, 139, 139);
+    text-align: center;
+}
+
+.professional *,
+.info *,
+.free-trial>*,
+.summary * {
+    margin-bottom: .5rem;
+}
+
+
+
+
+
+
 
 
 
