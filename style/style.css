@@ -406,4 +406,44 @@ nav a {
     padding: .8rem 3rem;
 }
 
+/*************************** QUESTION PANEL *************************/
+
+.question {
+    line-height: 8rem;
+}
+
+.padding-right {
+    padding: 0 3rem;
+}
+
+.hidden-lorem {
+    display: none;
+    margin-bottom: 2rem;
+    margin-top: -2rem;
+}
+
+#hidden:checked+label+.hidden-lorem {
+    display: block;
+}
+
+#hidden:checked+label>div>div>i {
+    transform: rotate(180deg);
+}
+
+#hidden2:checked+label+.hidden-lorem {
+    display: block;
+}
+
+#hidden2:checked+label>div>div>i {
+    transform: rotate(180deg);
+}
+
+#hidden3:checked+label+.hidden-lorem {
+    display: block;
+}
+
+#hidden3:checked+label>div>div>i {
+    transform: rotate(180deg);
+}
+
 /************* FOOTER STYLE ************/
