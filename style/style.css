@@ -51,9 +51,14 @@ a {
     color: black;
 }
 
+.ancor-old {
+    text-decoration: underline;
+    color: rgb(0, 0, 108);
+}
+
 .container {
     min-height: 15rem;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     background-color: rgb(85, 85, 85);
 }
@@ -129,7 +134,7 @@ nav a {
 }
 
 .container-intro {
-    max-width: 1200px;
+    max-width: 1400px;
     background-color: blue;
     min-height: 15rem;
     margin: 0 auto;
@@ -163,12 +168,12 @@ nav a {
 
 .panel {
     border: 1px solid rgb(139, 139, 139);
-    min-height: 1000px;
+    /* min-height: 1000px; */
     width: 30%;
 }
 
 .panel>* {
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .subscription {
@@ -178,12 +183,21 @@ nav a {
 
 .professional *,
 .info *,
-.free-trial>*,
-.summary * {
+.summary>* {
     margin-bottom: .5rem;
 }
 
+.free-trial * {
+    margin-bottom: 2rem;
+}
 
+.panel i {
+    margin-right: .5rem;
+}
+
+.summary h4 {
+    padding-bottom: 2rem;
+}
 
 
 
