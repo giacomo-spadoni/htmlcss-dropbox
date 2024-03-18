@@ -186,8 +186,15 @@ nav a {
 }
 
 .nav-lgn {
-    padding: 5px 10px;
+    padding: 1em 1.5em;
     margin-right: 5px;
+    box-sizing: border-box;
+}
+
+.nav-lgn:hover {
+    background-color: rgb(0, 119, 255);
+    color: white;
+    transition: 1s;
 }
 
 /************* MAIN STYLE ************/
@@ -334,6 +341,12 @@ nav a {
     max-width: 100%;
 }
 
+.partner a {
+    background-color: lightgrey;
+    border: 2px solid black;
+    color: black;
+}
+
 /*************************** CARDS PANEL *************************/
 
 .card {
@@ -422,6 +435,10 @@ nav a {
     margin-top: -2rem;
 }
 
+label {
+    cursor: pointer;
+}
+
 #hidden:checked+label+.hidden-lorem {
     display: block;
 }
@@ -447,3 +464,37 @@ nav a {
 }
 
 /************* FOOTER STYLE ************/
+
+footer {
+    color: white;
+    background-color: black;
+    width: 100%;
+    min-height: 400px;
+}
+
+.footer {
+    padding: 3rem;
+}
+
+.footer>div {
+    padding: 1rem;
+}
+
+.footer>div h3 {
+    padding: 1rem 0;
+}
+
+.footer>div>div {
+    font-size: 15px;
+    padding: .5rem 0;
+}
+
+footer hr {
+    border-top: white;
+    margin-left: 3rem;
+    width: 10%;
+}
+
+.language {
+    padding: 3rem 3rem;
+}
