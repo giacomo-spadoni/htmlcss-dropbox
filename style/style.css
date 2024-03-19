@@ -177,10 +177,13 @@ nav {
 
 nav a {
     color: rgb(81, 81, 81);
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
 }
 
-nav a:hover {
+nav .nav-btn:hover {
     color: black;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    transition: 1s;
 }
 
 .nav-btn {
@@ -199,6 +202,7 @@ nav a:hover {
     background-color: rgb(0, 119, 255);
     color: white;
     transition: 1s;
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
 }
 
 /************* MAIN STYLE ************/
@@ -501,4 +505,10 @@ footer hr {
 
 .language {
     padding: 3rem 3rem;
+}
+
+select {
+    background-color: black;
+    color: white;
+    border: none;
 }
