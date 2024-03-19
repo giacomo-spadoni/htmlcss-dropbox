@@ -1,5 +1,15 @@
 /************* COMMON STYLE ************/
 
+/* :root {
+    main {
+        filter: invert(100%);
+    }
+
+    main a {
+        filter: invert(100%);
+    }
+} */
+
 * {
     margin: 0;
     padding: 0;
@@ -82,6 +92,11 @@ a {
     width: auto;
 }
 
+.button:hover {
+    background-color: rgb(0, 72, 155);
+    transition: .8s;
+}
+
 form {
     padding: 2rem 0;
     display: flex;
@@ -151,6 +166,10 @@ form {
     width: calc(100vw / 3);
 }
 
+.position {
+    position: relative;
+}
+
 #small {
     margin-left: 1rem;
     width: 25%;
@@ -180,12 +199,6 @@ nav a {
     border-bottom: 3px solid rgba(0, 0, 0, 0);
 }
 
-nav .nav-btn:hover {
-    color: black;
-    border-bottom: 3px solid rgb(0, 0, 0);
-    transition: 1s;
-}
-
 .nav-btn {
     height: 100%;
     padding: 20px;
@@ -193,9 +206,13 @@ nav .nav-btn:hover {
 }
 
 .nav-lgn {
-    padding: 1em 1.5em;
-    margin-right: 5px;
+    padding: .5em 1em;
+    margin-right: 10px;
     box-sizing: border-box;
+}
+
+nav .button {
+    padding: .5em 1em;
 }
 
 .nav-lgn:hover {
@@ -203,6 +220,12 @@ nav .nav-btn:hover {
     color: white;
     transition: 1s;
     border-bottom: 3px solid rgba(0, 0, 0, 0);
+}
+
+nav .nav-btn:hover {
+    color: black;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    transition: 1s;
 }
 
 /************* MAIN STYLE ************/
@@ -244,6 +267,9 @@ nav .nav-btn:hover {
 .img-overflow {
     display: block;
     position: absolute;
+    width: 850px;
+    height: 400px;
+    filter: drop-shadow(5px 5px 5px #222);
 }
 
 /*************************** PRICE PANEL *************************/
@@ -355,6 +381,13 @@ nav .nav-btn:hover {
     color: black;
 }
 
+.partner a:hover {
+    background-color: rgb(136, 136, 136);
+    transition: .8s;
+    border: 2px solid black;
+    color: black;
+}
+
 /*************************** CARDS PANEL *************************/
 
 .card {
@@ -374,7 +407,7 @@ nav .nav-btn:hover {
 /*************************** BOXES PANEL *************************/
 
 .boxes {
-    background-color: rgb(152, 152, 152);
+    background-color: #F5F5F5;
     min-height: 15rem;
     width: 100%;
 }
@@ -398,7 +431,122 @@ nav .nav-btn:hover {
 }
 
 .green {
-    background-color: lightgreen;
+    background-color: #A2D39B;
+}
+
+.brown {
+    background-color: #61082B;
+}
+
+.aqua {
+    background-color: #0093CE;
+}
+
+.red {
+    background-color: #FF1C1C;
+}
+
+.red2 {
+    background-color: #D5001F;
+}
+
+.azul {
+    background-color: #B4D0E7;
+}
+
+.blue {
+    background-color: #0D2481;
+}
+
+.yellow {
+    background-color: #FFD830;
+}
+
+.square {
+    width: 100%;
+    height: 100%;
+    border: .7em solid rgba(255, 255, 255, 0);
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square:hover {
+    border: .7em solid rgba(255, 255, 255, 0.355);
+}
+
+.img-company {
+    width: 100%;
+    filter: invert(1);
+}
+
+.description {
+    display: none;
+    position: absolute;
+    left: 100%;
+}
+
+.description2 {
+    display: none;
+    position: absolute;
+    right: 100%;
+}
+
+.description hr {
+    width: 20%;
+}
+
+.description2 hr {
+    width: 20%;
+}
+
+.img-accrocchio {
+    width: 50%;
+    padding: 2rem 0;
+}
+
+.accrocchio {
+    padding: 0 1rem;
+    height: calc(100vw / 3);
+    width: calc(100vw / 3);
+    overflow: auto;
+}
+
+.accrocchio div {
+    padding: 2rem 0;
+}
+
+#company:checked+label+.description {
+    display: block;
+}
+
+#company2:checked+label+.description {
+    display: block;
+}
+
+#company3:checked+label+.description {
+    display: block;
+}
+
+#company4:checked+label+.description {
+    display: block;
+}
+
+#company5:checked+label+.description2 {
+    display: block;
+}
+
+#company6:checked+label+.description2 {
+    display: block;
+}
+
+#company7:checked+label+.description2 {
+    display: block;
+}
+
+#company8:checked+label+.description2 {
+    display: block;
 }
 
 /*************************** START PANEL *************************/
@@ -424,6 +572,13 @@ nav .nav-btn:hover {
 .start a {
     color: black;
     background-color: rgb(170, 170, 170);
+    padding: .8rem 3rem;
+}
+
+.start a:hover {
+    color: black;
+    transition: .8s;
+    background-color: rgb(125, 125, 125);
     padding: .8rem 3rem;
 }
 
