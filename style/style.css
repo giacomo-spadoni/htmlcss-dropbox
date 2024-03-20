@@ -516,6 +516,11 @@ nav .nav-btn:hover {
     padding: 2rem 0;
 }
 
+.box-description {
+    margin-top: 1rem;
+    font-size: 1em;
+}
+
 #company:checked+label+.description {
     display: block;
 }
