@@ -411,8 +411,15 @@ nav .nav-btn:hover {
     width: 100%;
 }
 
-.col-33 {
+.perfect-square {
     height: calc(100vw / 3);
+}
+
+@supports (aspect-ratio: 1) {
+    .perfect-square {
+        aspect-ratio: 1;
+        height: auto;
+    }
 }
 
 .box-1 {
@@ -472,7 +479,13 @@ nav .nav-btn:hover {
 }
 
 .square:hover {
+    transition: .5s;
     border: .7em solid rgba(255, 255, 255, 0.355);
+}
+
+.square:hover img {
+    transition: .5s;
+    transform: scale(1.1);
 }
 
 .img-company {
