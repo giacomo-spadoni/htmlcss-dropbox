@@ -52,6 +52,10 @@ h4 {
     flex-wrap: wrap;
 }
 
+.flex-gap {
+    gap: 1rem;
+}
+
 .space-between {
     justify-content: space-between;
 }
@@ -90,11 +94,11 @@ a {
     padding: 1em 1.5em;
     color: white;
     width: auto;
+    transition: .8s;
 }
 
 .button:hover {
     background-color: rgb(0, 72, 155);
-    transition: .8s;
 }
 
 form {
@@ -208,7 +212,8 @@ nav a {
 .nav-lgn {
     padding: .5em 1em;
     margin-right: 10px;
-    box-sizing: border-box;
+    border: 3px solid rgba(53, 53, 53, 0);
+    transition: 1.3s;
 }
 
 nav .button {
@@ -216,10 +221,7 @@ nav .button {
 }
 
 .nav-lgn:hover {
-    background-color: rgb(0, 119, 255);
-    color: white;
-    transition: 1s;
-    border-bottom: 3px solid rgba(0, 0, 0, 0);
+    border: 3px solid rgb(53, 53, 53);
 }
 
 nav .nav-btn:hover {
@@ -280,6 +282,11 @@ nav .nav-btn:hover {
 .panel {
     border: 1px solid rgb(139, 139, 139);
     width: 30%;
+    transition: 2s;
+}
+
+.panel:hover {
+    border: 1px solid rgb(0, 119, 255);
 }
 
 .panel>* {
@@ -289,6 +296,11 @@ nav .nav-btn:hover {
 .subscription {
     border-bottom: 1px solid rgb(139, 139, 139);
     text-align: center;
+    transition: 2s;
+}
+
+.panel:hover .subscription {
+    border-bottom: 1px solid rgb(0, 119, 255);
 }
 
 .professional *,
@@ -392,11 +404,13 @@ nav .nav-btn:hover {
 
 .card {
     margin-bottom: 2rem;
-    min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 1rem;
     gap: 1rem;
+    min-width: 280px;
+    flex-grow: 2;
 }
 
 .card-img {
@@ -476,21 +490,21 @@ nav .nav-btn:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .5s;
 }
 
 .square:hover {
-    transition: .5s;
     border: .7em solid rgba(255, 255, 255, 0.355);
-}
-
-.square:hover img {
-    transition: .5s;
-    transform: scale(1.1);
 }
 
 .img-company {
     width: 100%;
     filter: invert(1);
+    transition: .5s;
+}
+
+.square:hover .img-company {
+    transform: scale(1.1);
 }
 
 .description {
