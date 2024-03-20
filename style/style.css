@@ -580,6 +580,38 @@ nav .nav-btn:hover {
     display: block;
 }
 
+#company:checked+label .square {
+    border: .7em solid rgba(255, 255, 255, 0.355);
+}
+
+#company2:checked+label .square {
+    border: .7em solid rgba(255, 255, 255, 0.355);
+}
+
+#company3:checked+label .square {
+    border: .7em solid rgba(255, 255, 255, 0.355);
+}
+
+#company4:checked+label .square {
+    border: .7em solid rgba(255, 255, 255, 0.355);
+}
+
+#company5:checked+label .square {
+    border: .7em solid rgba(255, 255, 255, 0.355);
+}
+
+#company6:checked+label .square {
+    border: .7em solid rgba(255, 255, 255, 0.355);
+}
+
+#company7:checked+label .square {
+    border: .7em solid rgba(255, 255, 255, 0.355);
+}
+
+#company8:checked+label .square {
+    border: .7em solid rgba(255, 255, 255, 0.355);
+}
+
 /*************************** START PANEL *************************/
 
 .start {
